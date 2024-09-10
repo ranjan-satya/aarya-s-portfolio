@@ -12024,3 +12024,25 @@ Webflow.require("ix2").init({
         ],
     },
 });
+
+// Get all video elements with the class 'stop-video'
+const videos = document.querySelectorAll('.stop-video');
+
+// Create an Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        // Check if the video is out of view by at least 60%
+        if (entry.intersectionRatio < 0.4) {
+            // Pause the video
+            entry.target.pause();
+        }
+    });
+}, {
+    threshold: [0, 0.4, 1]
+});
+
+
+// Start observing each video element
+videos.forEach((video) => {
+    observer.observe(video);
+});
