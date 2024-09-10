@@ -12045,4 +12045,36 @@ const observer = new IntersectionObserver((entries) => {
 // Start observing each video element
 videos.forEach((video) => {
     observer.observe(video);
+
+    // Add an event listener for fullscreen change
+    video.addEventListener('fullscreenchange', () => {
+        if (!document.fullscreenElement) {
+            // If exiting fullscreen, pause the video
+            video.pause();
+        }
+    });
+
+    // For browsers that use the webkit prefix
+    video.addEventListener('webkitfullscreenchange', () => {
+        if (!document.webkitFullscreenElement) {
+            // If exiting fullscreen, pause the video
+            video.pause();
+        }
+    });
+
+    // For browsers that use the moz prefix
+    video.addEventListener('mozfullscreenchange', () => {
+        if (!document.mozFullScreenElement) {
+            // If exiting fullscreen, pause the video
+            video.pause();
+        }
+    });
+
+    // For browsers that use the ms prefix
+    video.addEventListener('msfullscreenchange', () => {
+        if (!document.msFullscreenElement) {
+            // If exiting fullscreen, pause the video
+            video.pause();
+        }
+    });
 });
