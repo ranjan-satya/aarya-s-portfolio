@@ -12077,4 +12077,13 @@ videos.forEach((video) => {
             video.pause();
         }
     });
+
+    // Add event listener for play/pause
+    video.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
 });
