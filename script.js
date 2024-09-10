@@ -12078,17 +12078,3 @@ videos.forEach((video) => {
         }
     });
 });
-
-// Disable long press on mobile devices for all images
-const images = document.querySelectorAll('img'); // Select all <img> tags
-
-images.forEach((img) => {
-    img.addEventListener('touchstart', (e) => {
-        e.preventDefault(); // Prevent the default long press action
-    });
-
-    // Disable right-click context menu for all images
-    img.oncontextmenu = (e) => {
-        e.preventDefault(); // Prevent right-click menu
-    };
-});
