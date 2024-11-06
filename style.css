@@ -3071,7 +3071,7 @@ body {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     color: #444;
-    background-color: #8585851a
+    background-color: #8585851a;
     border-radius: 0 20px 20px 0;
     flex-flow: column;
     justify-content: center;
@@ -3113,7 +3113,7 @@ body {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     color: #444;
-    background-color: #8585851a
+    background-color: #8585851a;
     border-radius: 0 20px 20px 0;
     flex-flow: column;
     justify-content: center;
