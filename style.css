@@ -3072,7 +3072,7 @@ body {
     backdrop-filter: blur(15px);
     color: #444;
     background-color: #8585851a;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 0 0 20px;
     flex-flow: column;
     justify-content: center;
     width: 11%;
