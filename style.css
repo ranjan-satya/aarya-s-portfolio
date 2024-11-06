@@ -3889,8 +3889,8 @@ body {
 }
 
 .slider-left {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .slider-arrow-left {
@@ -3899,8 +3899,8 @@ body {
 }
 
 .slider-right {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .slider-arrow-right {
